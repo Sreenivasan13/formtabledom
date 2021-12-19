@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DOM Manipulation with Forms</title>
+</head>
+<body>
+    <h1 id="title" class="nameDiv">DOM Form and Table</h1>
+    <p id="description">Collection of Form Data in Table</p>
+    <form id="form">
+        <div class="form-group">
+            <label for="first-name" class="input">First Name: 
+                <input id="first-name" type="text" placeholder="first name" required/>
+            </label> <br/>
+            
+        </div>
+        <div class="form-group">
+              <label for="last-name" class="input">Last Name: 
+                  <input id="last-name" type="text" placeholder="last name" required/>
+              </label><br/>
+              
+        </div>
+        <div class="form-group">
+            <label for="address" class="input">Address:
+                <textarea id="address" type="text" placeholder="Your Address..." required></textarea>
+            </label><br/>
+            <br/>
+        </div>
+        <div class="form-group">
+            <label for="pincode" class="input">Pincode: 
+                <input id="pincode" type="number" placeholder="653001" required/>
+            </label><br/>
+            
+        </div>
+        <div class="form-group">
+            <label for="gender" class="input">Gender: 
+                <input id="gender" name="gender" type="radio" value="male" required>Male </input>
+                <input id="gender" name="gender" type="radio" value="female" required>Female </input>
+                <input id="gender" name="gender" type="radio" value="others" required>Others </input>
+            </label><br/>
+            
+        </div>
+        
+        <div class="form-group">
+            <label for="choiceoffood" class="input">Choice Of Food: (must choose at least 2 out of 5 options)
+                <select id="choiceoffood" onclick="multipleFunc()">
+                    <option>Dosa</option>
+                    <option>Pongal</option>
+                    <option>Poori</option>
+                    <option>Kesari</option>
+                    <option>Briyani</option>
+                 </select>
+            </label>
+            
+             <p>Press CTRL and click above button to select multiple options at once.</p>
+        </div>
+        <div class="form-group">
+            <label for="state" class="input">State:
+                <input id="state" type="text" placeholder="state" required/>
+            </label><br/>
+            
+        </div>
+        <div class="form-group">
+            <label for="country" class="input">Country: 
+                <input id="country" type="text" placeholder="Country" required/>
+            </label><br/>
+            
+        </div>
+        
+        
+        <div class="form-group">
+            <button id="submit" type="submit" onclick="displayDetails">Submit</button>
+        </div>
+        
+        
+     </form><br/>
+    <table id="table">
+        
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Choice Of Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+    </table>
+    <script src="./form.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
